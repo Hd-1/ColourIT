@@ -1,0 +1,103 @@
+
+body{
+	font-family: "Oswald";
+	margin: 0;
+	padding: 0;
+	background-color:rgb(180,180,180);
+}
+
+header{
+	margin: 0;
+	padding: 0;
+	background-color:white;
+	font-variant: small-caps;
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+}
+
+header a{
+	text-decoration:none;
+	color:black;
+}
+
+#menu a { 
+	display:inline-block;
+}
+
+#menu li ul li:first-child{
+	border-top: 2px solid red;
+}
+
+.sousmenu:first-child{
+	margin-left:105px;
+}
+
+.sousmenu{
+	margin-right:70px;
+}
+
+.sousmenu1{
+	text-align:left;
+	padding-left:5px;
+	padding-right: 70px;
+	padding-bottom: 5px;
+}
+
+.sousmenu2{
+	text-align:left;
+	padding-left: 5px;
+	padding-right: 50px;
+	padding-bottom: 5px;
+}
+
+#menu li ul{
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+
+#menu > li{
+	position: relative;
+	display:inline-block;
+	padding: 5px 15px;
+}
+
+#menu ul {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	max-height:0em;	
+	margin:16px 0 0 15px;
+	background-color: white;
+	overflow: hidden;
+	transition: max-height 0.5s;
+	list-style-type: none;
+}
+
+#menu > li:hover ul{
+	max-height: 13em;
+}
+
+.souligne {
+	display: inline-block;
+	position: relative;
+}
+.souligne:before { 
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	transform-origin: bottom left;
+	transition: transform 0.25s ease-out;
+}
+
+.souligne:hover:before {
+	transform: scaleX(1);
+}
