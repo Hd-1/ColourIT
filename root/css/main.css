@@ -4,7 +4,8 @@
 header{
 	margin: 0;
 	padding: 0.5%;
-    background-color:var(--orange);
+	padding-bottom: 5em;
+	background: linear-gradient(to top, var(--lightyellow), var(--orange) 10%);
 }
 
 header a{
@@ -59,12 +60,6 @@ header nav ul{
 	margin: 0 7%;
 }
 
-@media screen and (max-width:1429px){
-	#menu li{
-		margin: 0 3%;
-	}
-}
-
 /*###################
 -------BODY--------
 ###################*/
@@ -79,20 +74,18 @@ article{
 }
 
 .title{
-	font-size: 2em;
+	font-size: 200%;
 	color: var(--darkblue);
 }
 
 .content{
-	font-size: 1.3em;
+	font-size: 130%;
 	color: var(--darkblue);
 	padding-left: 15px;
 }
 
-#contentpicutre{
-	max-height: 30em;
-	max-width: auto;
-	float: right;
+#content_picutre{
+	width: 40%;
 }
 
 .container{
@@ -103,12 +96,16 @@ article{
 	align-items: center;
 }
 
-.container a:hover{
+.links a:hover{
 	color:var(--bluelinkhover);
 	animation: arrow1 1s ease-in-out infinite;
 }
 
-.links{
+.links a:hover img{
+	animation: arrow1 1s ease-in-out infinite;
+}
+
+.links a{
 	color:var(--bluelink);
 	text-decoration: none;
 	padding-left: 15px;
@@ -131,16 +128,31 @@ footer ul{
 
 #social_media a{ 
 	display:inline-block;
-	font-size: 1.5em;
 }
 
 #social_media a:hover{
-	color: var(--blue);
+	transform: scale(1.3);
+	transition: .3s ease-in-out;
 }
 
 #social_media li{
 	position: relative;
 	display:inline-block;
+}
+
+
+/*###################
+-----SCREEN------
+###################*/
+@media screen and (max-width:1429px){
+
+	#menu li{
+		margin: 0 3%;
+	}
+
+	#content_picture{
+		visibility: hidden;
+	}
 }
 /*###################
 -----ANIMATION------
