@@ -73,6 +73,22 @@ article{
 	margin: auto;
 }
 
+.title{
+	font-size: 2em;
+}
+
+.content{
+	font-size: 1.3em;
+}
+
+.container{
+	margin: 0 auto;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content:center;
+}
 /*###################
 -----ANIMATION------
 ###################*/
