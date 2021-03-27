@@ -125,21 +125,25 @@ footer ul{
 	display:inline-block;
 }
 
-
-#social_media a{ 
-	display:inline-block;
+#social_media_footer a{ 
+	display:flex;
 }
 
-#social_media a:hover{
-	transform: scale(1.3);
-	transition: .3s ease-in-out;
-}
-
-#social_media li{
+#social_media_footer li{
 	position: relative;
 	display:inline-block;
 }
 
+#contact_footer a{
+	display:flex;
+	align-items:center;
+}
+
+.footer_contact_info{
+	font-size: 100%;
+	text-decoration: none;
+	color: var(--grey);
+}
 
 /*###################
 -----SCREEN------
@@ -158,6 +162,11 @@ footer ul{
 -----ANIMATION------
 ###################*/
 
+/*----Zoom----*/
+.zoom a:hover{
+	transition: .3s ease-in-out;
+	transform: scale(1.3);
+}
 /*----Arrow----*/
 .arrow_image{
 	max-width: 64px;
@@ -180,7 +189,7 @@ footer ul{
 
 /*----SLIDER----*/
 #slider{
-	max-width: 95%;
+	max-width: 70%;
 	margin: auto;
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -354,7 +363,7 @@ footer ul{
   .slider::before, .slider::after, .slider_prev, .slider_next {
 	position: absolute;
 	top: 0;
-	margin-top: 37.5%;
+	margin-top: 29.5%;
 	width: 4rem;
 	height: 4rem;
 	transform: translateY(-50%);
@@ -414,4 +423,5 @@ footer ul{
 --lightblue:#D1FDFE;
 --bluelinkhover:#4BADC2;
 --bluelink:#318091;
+--grey:#353533;
 }
