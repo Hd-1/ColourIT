@@ -125,6 +125,38 @@ article{
 	flex-direction: column;
 }
 
+#main_projects{
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#main_projects_picture li{
+	position: relative;
+	display:inline-block;
+}
+
+#main_team_1{
+	width: 15%;
+}
+
+#main_team_2{
+	width: 15%;
+}
+
+#main_team_3{
+	width: 15%;
+}
+
+#main_team_4{
+	width: 15%;
+}
+
+#main_team_images{
+	
+}
 /*###################
 -----FOOTER------
 ###################*/
