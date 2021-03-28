@@ -111,6 +111,20 @@ article{
 	padding-left: 15px;
 }
 
+#main_video{
+	width: 42.5%;
+	height: 80%;
+}
+
+#main_presentation{
+	margin: 0 auto;
+	width: 80%;
+	height: 30em;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 /*###################
 -----FOOTER------
 ###################*/
@@ -238,15 +252,18 @@ footer ul{
 	#line{
 		margin-top: 100px;
 		visibility: visible;
+		width: 300px;
 	}
 
 	#footer{
 		flex-direction: column;
 		width: 100%;
 		align-items: center;
-
 	}
 	
+	.indentation_footer{
+		padding: 0;
+	}
 }
 
 /*###################
