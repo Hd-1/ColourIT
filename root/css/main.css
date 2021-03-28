@@ -114,6 +114,10 @@ article{
 /*###################
 -----FOOTER------
 ###################*/
+#line{
+	visibility: hidden;
+}
+
 footer{
 	background: linear-gradient(to bottom, var(--lightyellow), var(--lightblue));
 	margin: 0;
@@ -125,39 +129,126 @@ footer ul{
 	display:inline-block;
 }
 
+#footer{
+	margin: 0 auto;
+	width: calc(100vw - 64px);
+    max-width: 960px;
+	display: flex;
+	align-items: flex-end;
+	align-self: center;
+	flex-direction: row;
+}
+
+/*----SOCIAL MEDIA----*/
+#social_media_footer a{
+	max-width: 20%;
+}
+
 #social_media_footer a{ 
 	display:flex;
+	align-items:center;
 }
 
 #social_media_footer li{
 	position: relative;
 	display:inline-block;
+	width: 19%;
+	min-width: 12%;
 }
 
+/*----CONTACT----*/
 #contact_footer a{
 	display:flex;
 	align-items:center;
 }
 
+#contact_footer img{
+	width:20%;
+}
+
 .footer_contact_info{
-	font-size: 100%;
+	font-size: 120%;
 	text-decoration: none;
 	color: var(--grey);
+}
+
+/*----TIME----*/
+#op_times_footer{
+	display: flex;
+	align-items: flex-end;
+}
+
+#op_time_footer li{
+	color:var(--darkblue);
+	font-size: 120%;
+}
+
+.day_footer p{
+	padding: 0;
+	margin: 0;
+}
+
+/*----NAV----*/
+.nav_footer a{
+	text-decoration: none;
+	color : var(--darkblue);
+	font-size: 130%;
+}
+
+.nav_footer a:hover{
+	color : var(--bluelinkhover);
+}
+
+.indentation_footer{
+	padding-left: 10px;
 }
 
 /*###################
 -----SCREEN------
 ###################*/
-@media screen and (max-width:1429px){
-
+@media screen and (min-width:1209px) and (max-width:1429px){
 	#menu li{
 		margin: 0 3%;
 	}
 
-	#content_picture{
-		visibility: hidden;
-	}
 }
+
+@media screen and (max-width:1208px) and (min-width:725px){
+	#menu li{
+		margin: 0 3%;
+	}
+
+	#op_time_footer li{
+		font-size: 90%;
+	}
+	.nav_footer{
+		font-size: 80%;
+	}
+	.footer_contact_info{
+		font-size: 90%;
+	}
+
+}
+
+@media screen and (max-width:724px){
+	#menu li{
+		margin: 0 3%;
+	}
+
+	#line{
+		margin-top: 100px;
+		visibility: visible;
+	}
+
+	#footer{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+
+	}
+	
+}
+
 /*###################
 -----ANIMATION------
 ###################*/
@@ -281,6 +372,7 @@ footer ul{
 	width: 100%;
 	background-image: url("../pictures/1.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
   }
   
   .slider_slide:nth-child(2) {
