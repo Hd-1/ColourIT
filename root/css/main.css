@@ -154,8 +154,8 @@ article{
 	width: 15%;
 }
 
-#main_team_images{
-	
+.main_team_images{
+	text-align: center;
 }
 /*###################
 -----FOOTER------
@@ -548,7 +548,7 @@ footer ul{
 ###################*/
 @font-face {
     font-family: 'Oswald';
-    src: url('../Font/Oswald/Oswald.ttf');
+    src: url('../font/Oswald/Oswald.ttf');
 }
 *{
 	font-family: "Oswald";
