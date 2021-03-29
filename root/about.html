@@ -1,107 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>ColourIT - About</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
 
 </head>
 <header>
 	<nav>
-		<ul id="menu">
-			<li id="logo"><a href="index.html"><span id="colour">COLOUR</span><span id="it">IT</span></a></li>
+		<div id="logo">
+			<a href="index.html"><span id="colour">COLOUR</span><span id="it">IT</span></a>
+		</div>
+		<ul class="menu">
+			<li><a href="index.html">HOME</a></li>
 
-			<li><a href="index.html" class="menu" id="active">HOME</a></li>
+			<li><a href="about.html" id="active">ABOUT</a></li>
 
-			<li><a href="about.html" class="menu">ABOUT</a></li>
+			<li><a href="project.html">PROJECT</a></li>
 
-			<li><a href="project.html" class="menu">PROJECT</a></li>
-
-			<li><a href="contact.html" class="menu">CONTACT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
 		</ul>
 	</nav>
-
-	<div id="slider">
-		<section class="slider">
-			<ol class="slider_viewport">
-
-				<li id="slider_slide1"tabindex="0"class="slider_slide">
-					<div class="slider_snapper">
-						<a href="#slider_slide4"class="slider_prev">Go to last slide</a>
-						<a href="#slider_slide2"class="slider_next">Go to next slide</a>
-					</div>
-				</li>
-
-				<li id="slider_slide2"tabindex="0"class="slider_slide">
-					<div class="slider_snapper">
-						<a href="#slider_slide1"class="slider_prev">Go to previous slide</a>
-						<a href="#slider_slide3"class="slider_next">Go to next slide</a>
-					</div>
-				</li>
-
-				<li id="slider_slide3"tabindex="0"class="slider_slide">
-					<div class="slider_snapper">
-						<a href="#slider_slide2"class="slider_prev">Go to previous slide</a>
-						<a href="#slider_slide4"class="slider_next">Go to next slide</a>
-					</div>
-				</li>
-
-				<li id="slider_slide4"tabindex="0"class="slider_slide">
-					<div class="slider_snapper">
-						<a href="#slider_slide3"class="slider_prev">Go to previous slide</a>
-						<a href="#slider_slide1"class="slider_next">Go to first slide</a>
-					</div>
-				</li>
-
-			</ol>
-			<aside class="slider_navigation">
-				<ol class="slider_navigation-list">
-					<li class="slider_navigation-item"><a href="#slider_slide1"class="slider_navigation-button">Go to slide 1</a></li>
-					<li class="slider_navigation-item"><a href="#slider_slide2"class="slider_navigation-button">Go to slide 2</a></li>
-					<li class="slider_navigation-item"><a href="#slider_slide3"class="slider_navigation-button">Go to slide 3</a></li>
-					<li class="slider_navigation-item"><a href="#slider_slide4"class="slider_navigation-button">Go to slide 4</a></li>
-				</ol>
-			</aside>
-		
-		</section>
-	</div>
 </header>
-
 <body>
-	<section>
-		<div class="container">
-			<div>
-				<p class="title">Everything you need to get creative projects done</p>
-				<p class="content">Bring your ideas to life with professional digital assets, resources and services</p>
-				<span class="links"><a href="###">Find the right product for you<img class="arrow_image" src="pictures/arrow.png" alt="arrow"></a></span>
+<div class="wrapper">
+	<div class="tabs">
+		<div class="tab">
+			<input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+			<label for="tab-1" class="tab-label">Team</label>
+			<div class="tab-content">
+				<div class="row">
+					<div class="column">
+						<img class="team_image" src="images/crocodile.jpg" alt="Picture of a crocodile" title="Crocodile">
+					</div>
+					<div class="column">
+						<img class="team_image" src="images/elephant.jpg" alt="Picture of an elephant" title="Elephant">
+					</div>
+				</div>
 			</div>
-			<img id="content_picutre" src="pictures/contentpicture.svg" alt="content_picture">
 		</div>
-	</section>
+		<div class="tab">
+			<input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+			<label for="tab-2" class="tab-label">Service</label>
+			<div class="tab-content">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Dictumst vestibulum rhoncus est pellentesque elit. Nulla posuere sollicitudin aliquam ultrices sagittis.
+				Scelerisque purus semper eget duis. Enim diam vulputate ut pharetra sit amet aliquam id.
+				Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat. Ultrices vitae auctor eu augue ut lectus arcu.
+				Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.
+				Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat. Auctor eu augue ut lectus arcu bibendum.
+				Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Interdum consectetur libero id faucibus nisl tincidunt eget nullam.
+				Porttitor rhoncus dolor purus non enim praesent elementum. Sed felis eget velit aliquet.
+				Commodo quis imperdiet massa tincidunt nunc pulvinar.
+			</div>
+		</div>
+	</div>
+</div>
 </body>
-<hr id="line">
 <footer>
-	<div id="footer" >
-			<div class="nav_footer">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Project</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			<div class="nav_footer">
-				<ul>
-					<li><a href="#">About</a></li>
-					<li class="indentation_footer"><a href="#">Services</a></li>
-					<li class="indentation_footer"><a href="#">Team</a></li>
-				</ul>
-			</div>
-		<div id="op_time_footer">
-			<ul>
-				<li class="day_footer"><p>Week:</p><p> 9h - 18h</p></li>
-				<li class="day_footer"><p>Saturday:</p><p> 8h - 12h</p></li>
-			</ul>
-		</div>
 		<div>
 			<ul id="social_media_footer" class="zoom">
 				<li><a href="https://www.facebook.com"><img src="pictures/facebook.png" alt="facbook"></a></li>
@@ -117,5 +73,4 @@
 				<li><a href="mailto: contact@colouorit.com" class="footer_contact_info"><img src="pictures/mail.png" alt="mail"><span class="up_text_footer">contact@colouorit.com</span></a></li>
 			</ul>
 		</div>
-	</div>
 </footer>
