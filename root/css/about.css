@@ -115,8 +115,13 @@ ul#mini_menu li {
 .team_image {
     margin-top: 8px;
     width: 100%;
+    object-fit: cover;
     padding: 10px;
     background-color: #EF233C;
+}
+figcaption {
+    text-align: center;
+    color: #0D0628;
 }
 /*----TAB SWITCH----*/
 .wrapper {
@@ -171,6 +176,7 @@ ul#mini_menu li {
     color: #2B2D42;
     transition: all 0.35s;
     width: 100%;
+    opacity: 0;
 }
 .tab_switch:checked + .tab_label {
     background: #FFFFFF;
@@ -185,20 +191,21 @@ ul#mini_menu li {
     z-index: 2;
     opacity: 1;
     transition: all 0.35s;
+    visibility: visible;
 }
-
-.tab_switch:not(:checked) + .tab_content{
+.tab_content{
     visibility: hidden;
 }
-
 /*###################
 -----FOOTER------
 ###################*/
 footer{
     background: #EDF2F4;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     text-align: center;
+    height: 2.5rem;
     color: #2B2D42;
 }
 
