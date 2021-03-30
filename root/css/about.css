@@ -17,7 +17,7 @@ header nav ul{
     margin:0;
     padding:0;
 }
-
+/*----UNDERLINE----*/
 .menu a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -98,6 +98,26 @@ body{
 ul#mini_menu li {
     display: inline-block;
 }
+/*----TEAM GALLERY----*/
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    flex: 33.33%;
+    padding: 0 4px;
+}
+.team_image {
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+    background-color: #EF233C;
+}
 /*----TAB SWITCH----*/
 .wrapper {
     width: 100%;
@@ -107,7 +127,7 @@ ul#mini_menu li {
     position: relative;
     margin: 3rem 0;
     background: #c6041a;
-    height: 14.75rem;
+    height: auto;
 }
 .tabs::before,
 .tabs::after {
@@ -119,11 +139,12 @@ ul#mini_menu li {
 }
 .tab {
     float: left;
+    font-size: 150%;
 }
-.tab-switch {
+.tab_switch {
     display: none;
 }
-.tab-label {
+.tab_label {
     position: relative;
     display: block;
     line-height: 2.75em;
@@ -136,12 +157,11 @@ ul#mini_menu li {
     top: 0;
     transition: all 0.25s;
 }
-.tab-label:hover {
+.tab_label:hover {
     top: -0.25rem;
     transition: top 0.25s;
 }
-.tab-content {
-    height: 12rem;
+.tab_content {
     position: absolute;
     z-index: 1;
     top: 2.75em;
@@ -149,10 +169,10 @@ ul#mini_menu li {
     padding: 1.618rem;
     background: #fff;
     color: #2B2D42;
-    opacity: 0;
     transition: all 0.35s;
+    width: 100%;
 }
-.tab-switch:checked + .tab-label {
+.tab_switch:checked + .tab_label {
     background: #FFFFFF;
     color: #2B2D42;
     border-bottom: 0;
@@ -161,10 +181,14 @@ ul#mini_menu li {
     z-index: 1;
     top: -0.0625rem;
 }
-.tab-switch:checked + label + .tab-content {
+.tab_switch:checked + label + .tab_content {
     z-index: 2;
     opacity: 1;
     transition: all 0.35s;
+}
+
+.tab_switch:not(:checked) + .tab_content{
+    visibility: hidden;
 }
 
 /*###################
