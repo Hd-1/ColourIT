@@ -114,10 +114,11 @@ ul#mini_menu li {
 }
 .team_image {
     margin-top: 8px;
-    width: 100%;
-    object-fit: cover;
     padding: 10px;
     background-color: #EF233C;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 figcaption {
     text-align: center;
@@ -132,7 +133,6 @@ figcaption {
     position: relative;
     margin: 3rem 0;
     background: #c6041a;
-    height: auto;
 }
 .tabs::before,
 .tabs::after {
@@ -205,10 +205,15 @@ footer{
     position: absolute;
     bottom: 0;
     text-align: center;
-    height: 2.5rem;
     color: #2B2D42;
 }
+#page-container {
+    position: relative;
+}
 
+#content-wrap {
+    padding-bottom: 60%;
+}
 footer ul{
     position: relative;
     display:inline-block;
@@ -315,6 +320,15 @@ footer ul{
 -----ANIMATION------
 ###################*/
 
+/*----Animated Gif----*/
+.static {
+    position:absolute;
+    background: white;
+}
+
+.static:hover {
+    opacity:0;
+}
 /*----Zoom----*/
 .zoom a:hover{
     transition: .3s ease-in-out;
