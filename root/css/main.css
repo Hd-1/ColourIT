@@ -5,13 +5,13 @@ header{
 	margin: 0;
 	padding: 0.5%;
 	padding-bottom: 5em;
-	background: linear-gradient(to top, var(--lightyellow), var(--orange) 10%);
+	background: #2B2D42;
 }
 
 header a{
 	padding-top: 10%;
 	text-decoration:none;
-	color:var(--darkblue);
+	color: #8D99AE;
 }
 
 header nav ul{
@@ -26,23 +26,23 @@ header nav ul{
 }
 
 #colour{
-    background-color: var(--darkblue);
+    background-color: #EF233C;
     margin: 0;
     padding: 4%;
-	color: white;
+	color: #FFFFFF;
 	border-radius: 20px 0 0 20px;
 }
 
 #it{
     padding: 2.1%;
-	border: .07em solid var(--darkblue);
-	color: var(--darkblue);
+	border: .07em solid #EF233C;
+	color: #EF233C;
 	border-radius: 0 20px 20px 0;
 }
 
 /*----MENU----*/
-#active{ 
-	color:white;  /*a:active doesn't work*/
+#active{
+	color: #FFFFFF;  /*a:active doesn't work*/
 }
 
 #menu a{ 
@@ -51,7 +51,7 @@ header nav ul{
 }
 
 #menu a:hover{
-	color: var(--blue);
+	color: #D90429;
 }
 
 #menu li{
@@ -66,9 +66,13 @@ header nav ul{
 body{
 	margin: auto;
 	padding: 0;
-	background-color:var(--lightyellow);
+	background-color: #8D99AE;
 }
 
+.bg {
+	background-color: #FFFFFF;
+	border: solid #EF233C 2px;
+}
 article{
 	margin: auto;
 }
@@ -173,8 +177,8 @@ article{
 	margin: 10px;
 	padding: 15px;
 	border-radius: 20%;
-	border-right: solid var(--orange) 1px;
-	border-bottom: solid var(--orange) 1px;
+	border-right: solid #D90429 1px;
+	border-bottom: solid #D90429 1px;
 }
 
 #main_team_2{
@@ -182,8 +186,8 @@ article{
 	margin: 10px;
 	padding: 15px;
 	border-radius: 20%;
-	border-left: solid var(--orange) 1px;
-	border-bottom: solid var(--orange) 1px;
+	border-left: solid #D90429 1px;
+	border-bottom: solid #D90429 1px;
 }
 
 #main_team_3{
@@ -191,8 +195,8 @@ article{
 	margin: 10px;
 	padding: 15px;
 	border-radius: 20%;
-	border-right: solid var(--orange) 1px;
-	border-top: solid var(--orange) 1px;
+	border-right: solid #D90429 1px;
+	border-top: solid #D90429 1px;
 }
 
 #main_team_4{
@@ -200,12 +204,12 @@ article{
 	margin: 10px;
 	padding: 15px;
 	border-radius: 20%;
-	border-left: solid var(--orange) 1px;
-	border-top: solid var(--orange) 1px;
+	border-left: solid #D90429 1px;
+	border-top: solid #D90429 1px;
 }
 
 #main_team_images{
-	border: solid 10px var(--orange);
+	border: solid 10px #e75e75;
 	border-radius: 50%;
 	padding-left: 5%;
 	max-width: 50%;
@@ -279,9 +283,10 @@ input[type=text], textarea {
 }
 
 footer{
-	background: linear-gradient(to bottom, var(--lightyellow), var(--lightblue));
+	background: #EDF2F4;
 	margin: 0;
 	padding: 0;
+	color: #2B2D42;
 }
 
 footer ul{
