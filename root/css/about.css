@@ -110,7 +110,7 @@ ul#mini_menu li {
 }
 .column {
     flex: 33.33%;
-    padding: 0 4px;
+    padding: 0 1%;
 }
 .team_image {
     margin-top: 8px;
@@ -201,19 +201,15 @@ figcaption {
 ###################*/
 footer{
     background: #EDF2F4;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
     text-align: center;
     color: #2B2D42;
-}
-#page-container {
-    position: relative;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    bottom: 0;
 }
 
-#content-wrap {
-    padding-bottom: 60%;
-}
 footer ul{
     position: relative;
     display:inline-block;
@@ -321,13 +317,28 @@ footer ul{
 ###################*/
 
 /*----Animated Gif----*/
+.static:hover {
+    opacity:0;
+}
 .static {
     position:absolute;
     background: white;
 }
+/*.active {
+    display: block;
+    margin: auto;
+    position: relative;
+}*/
+.static, .active {
+    height: 500px;
+    padding: 10px;
+    background-color: #EF233C;
+}
 
-.static:hover {
-    opacity:0;
+.column p {
+    font-size: 80%;
+    color: #8D99AE;
+    text-align: justify;
 }
 /*----Zoom----*/
 .zoom a:hover{
