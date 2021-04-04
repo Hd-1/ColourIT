@@ -212,6 +212,7 @@ footer{
 footer ul{
     position: relative;
     display:inline-block;
+    list-style: none;
 }
 
 /*----SOCIAL MEDIA----*/
@@ -266,10 +267,16 @@ footer ul{
 -----SCREEN------
 ###################*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1750px) {
     .column_gif {
         flex: 100%;
         max-width: 100%;
+    }
+    .static {
+        display: none;
+    }
+    .active {
+        width: 100%;
     }
 }
 
