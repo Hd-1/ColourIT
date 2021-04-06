@@ -109,8 +109,8 @@ ul#mini_menu li {
     padding: 0 4px;
 }
 .column_team {
-    flex: 100%;
-    max-width: 100%;
+    flex: 33.33%;
+    max-width: 33.33%;
     padding: 0 1%;
 }
 .team_image {
@@ -354,7 +354,7 @@ footer ul{
     height: 20em;
 }
 
-.column p {
+.column_gif p {
     font-size: 80%;
     color: #8D99AE;
     text-align: justify;
