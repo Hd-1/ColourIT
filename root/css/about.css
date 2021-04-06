@@ -336,6 +336,11 @@ footer ul{
     flex-wrap: wrap;
     padding: 0 4px;
 }
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .column_gif {
     flex: 50%;
     max-width: 50%;
