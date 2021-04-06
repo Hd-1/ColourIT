@@ -278,6 +278,10 @@ footer ul{
     .active {
         width: 100%;
     }
+    .column_team {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width:1209px) and (max-width:1429px){
